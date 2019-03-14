@@ -25,4 +25,4 @@ before_script:
   # Installing Composer dependencies
   - composer install --no-interaction --no-suggest --optimize-autoloader
 
-script: vendor/bin/phpbench run src/Benchmark.php --report='generator: "table", compare: "set", cols: ["subject", "mean"]'
+script: "vendor/bin/phpbench run src/Benchmark.php --report='generator: \"table\", compare: \"set\", cols: [\"subject\", \"mean\"]'"
