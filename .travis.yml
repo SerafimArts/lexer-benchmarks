@@ -1,0 +1,28 @@
+language: php
+
+php:
+  - 7.1
+  - 7.2
+  - 7.3
+  - nightly
+
+matrix:
+  fast_finish: true
+  allow_failures:
+    - php: nightly
+
+sudo: required
+
+cache:
+  directories:
+    - $HOME/.composer/cache
+
+before_script:
+  # Initialise Composer
+  - composer self-update -q
+  - composer global require hirak/prestissimo
+
+  # Installing Composer dependencies
+  - composer install --no-interaction --no-suggest --optimize-autoloader
+
+script: vendor/bin/phpbench run src/Benchmark.php --report='generator: "table", compare: "set", cols: ["subject", "mean"]'

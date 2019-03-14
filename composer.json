@@ -1,0 +1,15 @@
+{
+    "require": {
+        "php": ">=7.2",
+        "hoa/compiler": "dev-master@dev",
+        "railt/lexer": "dev-feature/multistate@dev",
+        "phpbench/phpbench": "~0.16"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bench\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
