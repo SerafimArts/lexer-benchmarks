@@ -1,6 +1,6 @@
 {
     "require": {
-        "php": ">=7.2",
+        "php": ">=7.1",
         "hoa/compiler": "dev-master@dev",
         "railt/lexer": "dev-feature/multistate@dev",
         "phpbench/phpbench": "~0.16"
