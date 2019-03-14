@@ -10,6 +10,11 @@
             "Bench\\": "src/"
         }
     },
+    "config": {
+        "platform": {
+            "php": "7.1.11"
+        }
+    },
     "minimum-stability": "dev",
     "prefer-stable": true
 }
