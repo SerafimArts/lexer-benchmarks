@@ -11,8 +11,6 @@ matrix:
   allow_failures:
     - php: nightly
 
-sudo: required
-
 cache:
   directories:
     - $HOME/.composer/cache
