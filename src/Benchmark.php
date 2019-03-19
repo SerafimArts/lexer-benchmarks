@@ -120,7 +120,7 @@ class Benchmark
             }
         }
 
-        $this->railt = new Lexer($builder->getPatterns(), [
+        $this->railt = new Lexer($builder->getPatterns(), ['skip'], [
             'default' => [
                 'named_reference_'    => 'nc',
                 'absolute_reference_' => 'c',
